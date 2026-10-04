@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "taro build --type h5 --watch",
     "build": "taro build --type h5",
-    "start": "taro build --type h5 --watch"
+    "start": "taro build --type h5 --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx tests/ledger.test.ts"
   },
   "dependencies": {
     "@nutui/nutui-react-taro": "^3.0.17",
@@ -34,6 +36,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "babel-preset-taro": "3.6.40",
+    "tsx": "^4.19.2",
     "typescript": "^5.9.2",
     "webpack": "5.91.0"
   }
